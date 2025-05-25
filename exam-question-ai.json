@@ -1,0 +1,508 @@
+[
+  {
+    "id": 1,
+    "question": "You have an Azure AI Search solution and a collection of blog posts that include a category field. You need to index the posts. The solution must meet the following requirements: Include the category field in the search results. Ensure that users can search for words in the category field. Ensure that users can perform drill down filtering based on category. Which index attributes should you configure for the category field?",
+    "options": [
+      "A. searchable, sortable, and retrievable",
+      "B. retrievable, filterable, and sortable",
+      "C. retrievable, facetable, and key",
+      "D. searchable, facetable, and retrievable"
+    ],
+    "answer": "D",
+    "explanation": "These attributes allow the category field to be included in search results, support searching for words in the category field, and enable drill down filtering based on category."
+  },
+  {
+    "id": 2,
+    "question": "You are developing a multilingual application that needs to translate text between multiple languages. You plan to use Azure AI Services to achieve this. Which Azure AI Service should you use for each requirement? To translate text from one language to another:",
+    "options": [
+      "A. Translator Text",
+      "B. Text Analytics",
+      "C. Speech"
+    ],
+    "answer": "A",
+    "explanation": "The Translator Text service is specifically designed for translating text between multiple languages."
+  },
+  {
+    "id": 3,
+    "question": "You are developing a multilingual application that needs to translate text between multiple languages. You plan to use Azure AI Services to achieve this. Which Azure AI Service should you use for each requirement? To detect the language of the input text:",
+    "options": [
+      "A. Translator Text",
+      "B. Text Analytics",
+      "C. Speech"
+    ],
+    "answer": "A",
+    "explanation": "The Translator Text service includes language detection capabilities to identify the language of the input text."
+  },
+  {
+    "id": 4,
+    "question": "You are developing a multilingual application that needs to translate text between multiple languages. You plan to use Azure AI Services to achieve this. Which Azure AI Service should you use for each requirement? To provide real-time translation of spoken language:",
+    "options": [
+      "A. Translator Text",
+      "B. Speech",
+      "C. Text Analytics"
+    ],
+    "answer": "B",
+    "explanation": "The Speech service provides real-time translation of spoken language."
+  },
+  {
+    "id": 5,
+    "question": "You have a collection of 50,000 scanned documents that contain text. You plan to make the text available through Azure AI Search. You need to configure an enrichment pipeline to perform optical character recognition (OCR) and text analytics. The solution must minimize costs. What should you attach to the skillset?",
+    "options": [
+      "A. a new Computer Vision resource",
+      "B. a free (limited enrichments) AI Services resource",
+      "C. an Azure Machine Learning Designer pipeline",
+      "D. a new AI Services resource that uses the S0 pricing tier"
+    ],
+    "answer": "D",
+    "explanation": "A multiservice AI Services resource using the S0 pricing tier can provide both OCR and text analytics capabilities, and it is suitable for processing a large volume of documents."
+  },
+  {
+    "id": 6,
+    "question": "You have an Azure AI Search service. During the past 12 months, query volume steadily increased. You discover that some search query requests to the AI Search service are being throttled. You need to reduce the likelihood that search query requests are throttled. Which solution should you implement?",
+    "options": [
+      "A. Configure a AI Search service that uses a higher tier.",
+      "B. Add more replicas to the AI Search service.",
+      "C. Enable query caching in the AI Search service.",
+      "D. Increase the timeout setting for search queries."
+    ],
+    "answer": "A",
+    "explanation": "Using a higher tier provides more resources and can handle a higher query volume, reducing the likelihood of throttling."
+  },
+  {
+    "id": 7,
+    "question": "You plan to perform predictive maintenance. You collect IoT sensor data from 1000 industrial machines for a year. Each machine has 50 different sensors that generate data at one-minute intervals. In total, you have 50,000 time series datasets. You need to identify unusual values in each time series to help predict machinery failures. Which Azure service should you use?",
+    "options": [
+      "A. Azure Machine Learning",
+      "B. Azure Stream Analytics",
+      "C. Azure Time Series Insights",
+      "D. Anomaly Detector"
+    ],
+    "answer": "D",
+    "explanation": "Anomaly Detector is specifically designed to identify unusual values in time series data, making it ideal for predictive maintenance."
+  },
+  {
+    "id": 8,
+    "question": "You create a web app named app1 that runs on an Azure virtual machine named vm1. vm1 is on an Azure virtual network named vnet1. You plan to create a new Azure AI Search service named service1. You need to ensure that app1 can connect directly to service1 without routing traffic over the public internet. Which solution should you implement?",
+    "options": [
+      "A. Deploy service1 with a private endpoint in vnet1 and configure Azure Private Link.",
+      "B. Deploy service1 with a public endpoint and configure a VPN connection between vnet1 and the public endpoint.",
+      "C. Deploy service1 with a public endpoint and configure a service endpoint in vnet1.",
+      "D. Deploy service1 with a private endpoint in a different virtual network and configure Azure Private Link."
+    ],
+    "answer": "A",
+    "explanation": "Deploying service1 with a private endpoint in the same virtual network and configuring Azure Private Link ensures that traffic between app1 and service1 does not traverse the public internet."
+  },
+  {
+    "id": 9,
+    "question": "You are developing a new sales system that will process video and text from a public-facing website. To ensure fairness, you plan to implement measures that prevent bias in the system's recommendations and decisions. Which two actions should you take to ensure fairness?",
+    "options": [
+      "A. Conduct regular bias assessments on the system's algorithms.",
+      "B. Ensure transparency in how the system makes decisions.",
+      "C. Include diverse data sets during the training phase.",
+      "D. Implement strict data privacy measures.",
+      "E. Use only historical data for training the system."
+    ],
+    "answer": "A,C",
+    "explanation": "Conducting regular bias assessments helps identify and mitigate any biases in the system's algorithms, ensuring fair outcomes. Including diverse data sets helps ensure that the system's algorithms are trained on a wide range of scenarios, reducing the risk of bias."
+  },
+  {
+    "id": 10,
+    "question": "You plan to use containerized versions of the Anomaly Detector API on cloud devices for testing and in on-premises datacenters. You need to ensure that containerized deployments meet the following requirements: Prevent billing and API information from being stored in the command-line histories of the devices that run the container. Control access to the container images by using Azure role-based access control (Azure RBAC). Which four actions should you perform in sequence?",
+    "options": [
+      "A. Create a custom Dockerfile.",
+      "B. Pull the Anomaly Detector container image.",
+      "C. Build the image.",
+      "D. Push the image to an Azure container registry.",
+      "E. Distribute a docker run script.",
+      "F. Push the image to Docker Hub."
+    ],
+    "answer": "A,B,C,D",
+    "explanation": "Creating a custom Dockerfile is the first step in defining the container environment. Pulling the Anomaly Detector container image is necessary to get the base image for your custom Dockerfile. Building the image compiles the Dockerfile and creates the container image. Pushing the image to an Azure container registry allows you to control access using Azure RBAC."
+  },
+  {
+    "id": 11,
+    "question": "You are developing a new sales system that will process video and text from a public-facing website. You plan to monitor the sales system to ensure that it provides transparent and secure results. Which two responsible AI principles provide guidance to meet the monitoring requirements?",
+    "options": [
+      "A. transparency",
+      "B. fairness",
+      "C. inclusiveness",
+      "D. reliability and safety",
+      "E. privacy and security"
+    ],
+    "answer": "A,E",
+    "explanation": "Transparency ensures that AI systems are understandable and explainable, which is crucial for monitoring and providing transparent results. Privacy and security focus on protecting user data, which is essential for ensuring secure results."
+  },
+  {
+    "id": 12,
+    "question": "Your company receives numerous invoices in English and wants to automate the process of extracting key information such as invoice number, date, and total amount. The solution should require minimal development effort and be able to handle various invoice formats. Which Azure service should you use?",
+    "options": [
+      "A. Custom Vision",
+      "B. Form Recognizer",
+      "C. Computer Vision",
+      "D. Personalizer"
+    ],
+    "answer": "B",
+    "explanation": "Form Recognizer is designed to extract key information from documents, such as invoices, with minimal development effort."
+  },
+  {
+    "id": 13,
+    "question": "You have an Azure AI Search service. During the past 12 months, query volume steadily increased. You discover that some search query requests to the AI Search service are being throttled. You need to reduce the likelihood that search query requests are throttled. Solution: You enable customer-managed key (CMK) encryption. Does this meet the goal?",
+    "options": ["Yes", "No"],
+    "answer": "B",
+    "explanation": "Enabling CMK encryption does not address the issue of throttling caused by high query volume. Throttling is typically related to service capacity, not encryption settings."
+  },
+  {
+    "id": 14,
+    "question": "You create a web app named app1 that runs on an Azure virtual machine named vm1. vm1 is on an Azure virtual network named vnet1. You plan to create a new Azure AI Search service named service1. You need to ensure that app1 can connect directly to service1 without routing traffic over the public internet. Solution: You deploy service1 with a public endpoint and configure a network security group (NSG) for vnet1. Does this meet the goal?",
+    "options": ["Yes", "No"],
+    "answer": "B",
+    "explanation": "Configuring an NSG for vnet1 does not prevent traffic from routing over the public internet. To ensure direct connectivity without using the public internet, you should deploy service1 with a private endpoint and configure Azure Private Link."
+  },
+  {
+    "id": 15,
+    "question": "You plan to use a Language Understanding application named app19467 that is deployed to a container container27362. The application was developed using a Language Understanding authoring resource named lu17392n. The application has the following versions: V1.3 (None/None), V1.2 (2020-10-01/None), V1.1 (2020-09-10/2020-09-15). You need to create a container that uses the latest deployed version of app19467. What steps should you take to achieve this?",
+    "options": [
+      "Run a container that has version set as an environment variable.",
+      "Export the model by using the Export as JSON option.",
+      "Select v1.2 of app1.",
+      "Run a container and mount the model file.",
+      "Select v1.1 of app1.",
+      "Export the model by using the Export for containers (GZIP) option."
+    ],
+    "answer": "D,E,F",
+    "explanation": "Given that v1.2 is not published, v1.1 is the latest published version. Exporting for containers prepares the model for deployment. Mounting the model file deploys the model to the container."
+  },
+  {
+    "id": 16,
+    "question": "A customer is currently using Azure AI Search to manage and query their indexed data. To enhance security, they plan to enable server-side encryption and use customer-managed keys (CMK) stored in Azure Key Vault. This change aims to provide an additional layer of protection for their sensitive data. However, they need to understand the potential impacts of this change on their search service. What are three implications of enabling server-side encryption with CMK in Azure AI Search?",
+    "options": [
+      "Azure Key Vault is required.",
+      "A self-signed X.509 certificate is required.",
+      "The index size will increase.",
+      "The index size will decrease.",
+      "Query times will increase.",
+      "Query times will decrease."
+    ],
+    "answer": "A,C,E",
+    "explanation": "Azure Key Vault stores the CMK. Enabling CMK introduces encryption overhead, increasing index size and query latency."
+  },
+  {
+    "id": 17,
+    "question": "You are building an AI solution that will use Sentiment Analysis results from surveys to calculate bonuses for customer service staff. You need to ensure that the solution meets the Microsoft responsible AI principles. What should you do?",
+    "options": [
+      "Include the Sentiment Analysis results when surveys return a low confidence score.",
+      "Use all the surveys, including surveys by customers who requested that their account be deleted and their data be removed.",
+      "Publish the raw survey data to a central location and provide the staff with access to the location.",
+      "Add a human review and approval step before making decisions that affect the staff's financial situation."
+    ],
+    "answer": "D",
+    "explanation": "Adding a human review and approval step ensures accountability and fairness, preventing automated decisions from negatively impacting staff without oversight."
+  },
+  {
+    "id": 18,
+    "question": "You are building an app that will process incoming email and direct messages to either French or English language support teams. Which Azure AI Services API should you use?",
+    "options": {
+      "Value1": ["api.AI.microsoft.com", "eastus.api.AI.microsoft.com", "portal.azure.com"],
+      "Value2": ["/text/analytics/v3.1/entities/recognition/general", "/text/analytics/v3.1/languages", "/translator/text/v3.0/translate?to=en", "/translator/text/v3.0/translate?to=fr"]
+    },
+    "answer": "B,B",
+    "explanation": "eastus.api.AI.microsoft.com is the correct format for the endpoint. /text/analytics/v3.1/languages is used for detecting the language of the input text."
+  },
+  {
+    "id": 19,
+    "question": "You create a web app named app1 that runs on an Azure virtual machine named vm1. vm1 is on an Azure virtual network named vnet1. You plan to create a new Azure AI Search service named service1. You need to ensure that app1 can connect directly to service1 without routing traffic over the public internet. Which solution should you implement?",
+    "options": [
+      "Deploy service1 with a private endpoint in vnet1 and configure Azure Private Link.",
+      "Deploy service1 with a public endpoint and configure an IP firewall rule.",
+      "Deploy service1 with a public endpoint and configure a VPN connection between vnet1 and the public endpoint.",
+      "Deploy service1 with a private endpoint in a different virtual network and configure Azure Private Link."
+    ],
+    "answer": "A",
+    "explanation": "Deploying service1 with a private endpoint in the same virtual network and configuring Azure Private Link ensures that traffic between app1 and service1 does not traverse the public internet."
+  },
+  {
+    "id": 20,
+    "question": "You need to develop a method to convert speech to text for streaming MP3 data. How should you complete the code?",
+    "options": {
+      "first blank": ["AudioConfig.SetProperty", "AudioConfig.GetCompressedFormat", "AudioConfig.GetWaveFormatPCM", "PullAudioInputStream"],
+      "second blank": ["KeywordRecognizer", "SpeakerRecognizer", "SpeechRecognizer", "SpeechSynthesizer"]
+    },
+    "answer": "B,C",
+    "explanation": "GetCompressedFormat handles compressed audio streams like MP3. SpeechRecognizer converts speech to text."
+  },
+  {
+    "id": 21,
+    "question": "You need to develop an automated call handling system that can respond to callers in their own language. The system will support only French and English. Which Azure AI Services service should you use to meet each requirement? Detect the incoming language:",
+    "options": [
+      "Speaker Recognition",
+      "Speech to Text",
+      "Text Analytics",
+      "Translator"
+    ],
+    "answer": "C,D",
+    "explanation": "Text Analytics provides language detection capabilities. Translator also supports language detection for incoming calls."
+  },
+  {
+    "id": 22,
+    "question": "You have receipts that are accessible from a URL. You need to extract data from the receipts by using Form Recognizer and the SDK. The solution must use a prebuilt model. Which client and method should you use?",
+    "options": [
+      "the FormRecognizerClient client and the StartRecognizeContentFromUri method",
+      "the FormTrainingClient client and the StartRecognizeContentFromUri method",
+      "the FormTrainingClient client and the StartRecognizeReceiptsFromUri method",
+      "the FormRecognizerClient client and the StartRecognizeReceiptsFromUri method"
+    ],
+    "answer": "D",
+    "explanation": "FormRecognizerClient with StartRecognizeReceiptsFromUri is used to extract data from receipts using the prebuilt receipt model."
+  },
+  {
+    "id": 23,
+    "question": "You have an Azure AI Search service. During the past 12 months, query volume steadily increased. You discover that some search query requests to the AI Search service are being throttled. You need to reduce the likelihood that search query requests are throttled. Solution: You add indexes. Does this meet the goal?",
+    "options": ["Yes", "No"],
+    "answer": "B",
+    "explanation": "Adding indexes does not reduce throttling. Increasing the service tier or replicas is needed to handle higher query volumes."
+  },
+  {
+    "id": 24,
+    "question": "You have an Azure AI Search instance that indexes purchase orders by using Form Recognizer. You need to analyze the extracted information by using Microsoft Power BI. The solution must minimize development effort. What should you add to the indexer?",
+    "options": [
+      "a projection group",
+      "a file projection",
+      "an object projection",
+      "a table projection"
+    ],
+    "answer": "D",
+    "explanation": "A table projection organizes data into a tabular format, which can be easily consumed by Power BI for analysis."
+  },
+  {
+    "id": 25,
+    "question": "You have an Azure AI Search resource named Search1 that is used by multiple apps. You need to secure Search1. The solution must meet the following requirements: Prevent access from the internet. Limit the access of each app to specific queries.",
+    "options": [
+      "Configure an IP firewall / Create a private endpoint",
+      "Create a private endpoint / Use Azure roles",
+      "Use Azure roles / Use key authentication"
+    ],
+    "answer": "B",
+    "explanation": "Private endpoint prevents public internet access. Azure roles allow managing permissions and limiting query access per app."
+  },
+  {
+    "id": 26,
+    "question": "You need to build a monitoring solution for staff compliance with personal protective equipment (PPE) requirements. Identify staff who removed masks or safety glasses. Perform a compliance check every 15 minutes. Minimize development effort and costs.",
+    "options": [
+      "Face",
+      "Computer Vision",
+      "Azure Video Analyzer for Media"
+    ],
+    "answer": "C",
+    "explanation": "Video Analyzer for Media supports object detection and frequent checks, ideal for monitoring PPE compliance with minimal effort."
+  },
+  {
+    "id": 27,
+    "question": "You have an Azure IoT hub that receives sensor data from machinery. You need to build an app that performs anomaly detection across correlated sensors, identifies root causes of process stops, and sends alerts. The solution must minimize development time.",
+    "options": [
+      "Azure Metrics Advisor",
+      "Form Recognizer",
+      "Azure Machine Learning",
+      "Anomaly Detector"
+    ],
+    "answer": "D",
+    "explanation": "Anomaly Detector detects anomalies across sensors, identifies root causes, and integrates with other services to send alerts quickly."
+  },
+  {
+    "id": 28,
+    "question": "You have an app named App1 that uses an Azure AI Services model to identify anomalies in a time series data stream. You need to run App1 in a location with limited connectivity. The solution must minimize costs.",
+    "options": [
+      "a Kubernetes cluster hosted in an Azure Stack Hub integrated system",
+      "Azure Kubernetes Service (AKS)",
+      "Azure Container Instances",
+      "the Docker Engine"
+    ],
+    "answer": "D",
+    "explanation": "Docker Engine runs containers on-premises without requiring internet connectivity, making it cost-effective for limited connectivity locations."
+  },
+  {
+    "id": 29,
+    "question": "You are building a solution that will detect anomalies in sensor data from the previous 24 hours. Ensure real-time detection as data is generated. Which type of detection should you use?",
+    "options": [
+      "batch",
+      "streaming",
+      "change points"
+    ],
+    "answer": "B",
+    "explanation": "Streaming detection processes data in real-time as it is generated, allowing immediate anomaly detection."
+  },
+  {
+    "id": 30,
+    "question": "You are building an app that scans confidential documents and uses the Language service to analyze contents. Provision an Azure AI Services resource. Ensure confidential documents remain on-premises. Which actions should you perform in sequence?",
+    "options": [
+      "Run container with App ID and Client Secret",
+      "Provision on-premises Kubernetes cluster with internet connectivity",
+      "Pull image from Microsoft Container Registry (MCR)",
+      "Run container and specify App ID and inject URI of AI Services"
+    ],
+    "answer": "B,C,D",
+    "explanation": "Provisioning a Kubernetes cluster ensures on-prem hosting. Pulling from MCR gets the container image. Running the container configures communication securely."
+  },
+  {
+    "id": 31,
+    "question": "You are building an app that uses the Speech service. Ensure the app authenticates using an Azure AD token. Which two actions should you perform?",
+    "options": [
+      "Enable virtual network service endpoint",
+      "Configure custom subdomain",
+      "Request X.509 certificate",
+      "Create private endpoint",
+      "Assign Azure roles"
+    ],
+    "answer": "B,D",
+    "explanation": "Custom subdomain enables Azure AD auth. Private endpoint ensures secure communication between app and service."
+  },
+  {
+    "id": 32,
+    "question": "You are developing a multilingual chat application that needs to translate messages between languages in real-time. Support translation for text messages and provide language detection. Which Azure AI Service should you use for each requirement?",
+    "options": {
+      "Value1": ["Text Analytics", "Translator Text", "Speech to Text"],
+      "Value2": ["Text Analytics", "Translator Text", "Speech to Text"]
+    },
+    "answer": "B,A",
+    "explanation": "Translator Text translates text messages. Text Analytics detects input language."
+  },
+  {
+    "id": 33,
+    "question": "You have an Azure subscription with an Anomaly Detector resource. Deploy a Docker host server named Server1. Host an instance of the Anomaly Detector service on Server1. Which parameter should you include in the docker run command?",
+    "options": [
+      "Fluentd",
+      "Http Proxy",
+      "Mounts",
+      "Billing"
+    ],
+    "answer": "D",
+    "explanation": "The Billing parameter specifies the endpoint URI for billing purposes, required to run the Anomaly Detector container."
+  },
+  {
+    "id": 34,
+    "question": "You plan to deploy an Azure OpenAI resource using an ARM template. The resource must handle 600 requests per minute. How should you complete the template?",
+    "options": [
+      "1 Capacity Unit",
+      "10 Capacity Units",
+      "100 Capacity Units"
+    ],
+    "answer": "B",
+    "explanation": "Each capacity unit supports 60 requests per minute. 10 units are required to handle 600 requests per minute."
+  },
+  {
+    "id": 35,
+    "question": "Ensure the app detects negative comments using Sentiment Analysis API in Azure AI Language. Managed feedback must remain on your internal network. Which actions should you perform in sequence?",
+    "options": [
+      "Identify Language service endpoint URL and key",
+      "Provision Language service resource in Azure",
+      "Run container and query prediction endpoint",
+      "Deploy Docker container to on-premises server"
+    ],
+    "answer": "B,D,C",
+    "explanation": "Provisioning the resource sets up the API. Deploying to on-premises keeps data local. Running the container allows querying locally."
+  },
+  {
+    "id": 36,
+    "question": "Provide each app with access to the appropriate deployment of an Azure OpenAI resource. Only the apps should access the resource. What should you use to provide access and connect to deployments?",
+    "options": {
+      "Value1": ["API key", "Bearer token", "SAS token"],
+      "Value2": ["API key", "Deployment endpoint", "Deployment name", "Deployment type"]
+    },
+    "answer": "A,B",
+    "explanation": "API key provides secure access. Deployment endpoint connects each app to its optimized deployment."
+  },
+  {
+    "id": 37,
+    "question": "Configure App1 to connect to Azure OpenAI Model AI1. What information must you provide?",
+    "options": [
+      "endpoint, key, and model name",
+      "deployment name, key, and model name",
+      "endpoint, key, and model type",
+      "deployment name, endpoint, and key"
+    ],
+    "answer": "D",
+    "explanation": "Deployment name specifies which deployment to use. Endpoint connects to the resource. Key authenticates the request."
+  },
+  {
+    "id": 38,
+    "question": "Develop a system to monitor temperature data from a stream. Generate alerts for atypical values. Minimize development effort. What should you include in the solution?",
+    "options": [
+      "Multivariate Anomaly Detection",
+      "Azure Stream Analytics",
+      "Metric alerts in Azure Monitor",
+      "Univariate Anomaly Detection"
+    ],
+    "answer": "B",
+    "explanation": "Stream Analytics processes real-time streams and generates alerts based on conditions, minimizing development effort."
+  },
+  {
+    "id": 39,
+    "question": "You collect IoT sensor data from 100 industrial machines for a year. Each machine has 500 different sensors generating data every minute. In total, you have 50,000 time series datasets. You need to identify unusual values in each time series to help predict machinery failures. Which Azure service should you use?",
+    "options": [
+      "Azure AI Computer Vision",
+      "Cognitive Search",
+      "Azure AI Document Intelligence",
+      "Azure AI Anomaly Detector"
+    ],
+    "answer": "D",
+    "explanation": "Anomaly Detector identifies unusual values in time series data, making it ideal for predictive maintenance."
+  },
+  {
+    "id": 40,
+    "question": "Index a 20-GB video file stored in OneDrive using Azure Video Indexer. What should you do?",
+    "options": [
+      "Upload to YouTube and copy link",
+      "Download and upload to Video Indexer",
+      "Create download link and copy to Video Indexer",
+      "Create sharing link and copy to Video Indexer"
+    ],
+    "answer": "D",
+    "explanation": "Creating a sharing link from OneDrive provides a publicly accessible URL for indexing by Azure Video Indexer."
+  },
+  {
+    "id": 41,
+    "question": "Secure access to an Azure AI Service resource connected to a virtual network. Prevent external access and minimize administrative effort. Which two actions should you perform?",
+    "options": [
+      "Enable service endpoint in VNet",
+      "Configure IAM settings",
+      "Modify virtual network settings",
+      "Create subnet",
+      "Modify virtual network settings in AI service"
+    ],
+    "answer": "A,E",
+    "explanation": "Enabling a service endpoint secures resources to the virtual network. Modifying AI service's network settings restricts access to the virtual network."
+  },
+  {
+    "id": 42,
+    "question": "Monitor a user's video stream and detect when they ask an instructor a question. Minimize development effort. What should you include in the solution?",
+    "options": [
+      "language detection in Azure AI Language Service",
+      "Face service in Azure AI Vision",
+      "object detection in Azure AI Custom Vision",
+      "speech-to-text in Azure AI Speech service"
+    ],
+    "answer": "D",
+    "explanation": "Speech-to-text converts spoken questions into text, enabling detection of when a user asks a question."
+  },
+  {
+    "id": 43,
+    "question": "Add a step to an Azure DevOps pipeline that identifies a created Azure AI services account. Minimize development effort. Which Azure CLI command should you run?",
+    "options": [
+      "az resource link",
+      "az cognitiveservices account network-rule",
+      "az account list",
+      "az cognitiveservices account show"
+    ],
+    "answer": "D",
+    "explanation": "az cognitiveservices account show retrieves info about a Cognitive Services account to identify it."
+  },
+  {
+    "id": 44,
+    "question": "Extract data from 10,000 scanned images of hand-written survey responses with inconsistent layouts. Where should you upload the images, and which model type should you use?",
+    "options": {
+      "Value1": ["Cosmos DB", "Azure Files", "Azure Storage"],
+      "Value2": ["Custom neural", "Custom template", "Identity document (ID)"]
+    },
+    "answer": "C,A",
+    "explanation": "Azure Storage stores images for Document Intelligence processing. Custom neural models are suitable for extracting data from inconsistent layouts like handwritten surveys."
+  }
+]
